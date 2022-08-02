@@ -24,7 +24,7 @@ const Navbar = () => {
         <IconButton>
           <SearchIcon />
         </IconButton>
-        <input placeholder='Search games' type="text" />
+        <input placeholder='Search FeltMMO.com' type="text" />
       </div>
     </div>
   );

@@ -1,0 +1,18 @@
+.landing {
+  position: relative;
+}
+
+.landing__searchInput {
+  position: absolute;
+  top: 30%;
+  right: 50%;
+  border: none;
+  outline: 0;
+  background-color: transparent;
+  font-size: medium;
+  background-color: red;
+}
+
+.landing__searchInput {
+ 
+}
