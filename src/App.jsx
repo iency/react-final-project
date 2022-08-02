@@ -7,10 +7,11 @@ function App() {
     <Router>
     <div className="app">
       <Navbar />
-      <Routes>
-        {/* <Route path='/' element={<Home />}></Route>
-        <Route path=':id' element={<Games />}></Route> */}
-      </Routes>
+      <div className="app__body">
+        <Routes>
+          {/* <Route path='/games' element={<Games />}></Route> */}
+        </Routes>
+      </div>
     </div>
     </Router>
   );
