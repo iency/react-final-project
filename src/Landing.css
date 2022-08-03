@@ -8,9 +8,14 @@
   right: 50%;
   border: none;
   outline: 0;
-  background-color: transparent;
+  background-color: #fff;
+  box-sizing: border-box;
   font-size: medium;
-  background-color: red;
+  max-width: 400px;
+  margin: 100px auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
 .landing__searchInput {
