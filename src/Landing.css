@@ -1,23 +1,30 @@
 .landing {
-  position: relative;
+  height: 100vh;
+  background-image: url("https://i.imgur.com/RR0J7Z0.jpg");
 }
 
 .landing__searchInput {
-  position: absolute;
-  top: 30%;
-  right: 50%;
   border: none;
   outline: 0;
-  background-color: #fff;
+  font-size: 20px;
+  margin-left: 25px;
+  margin-top: 24px;
+  width: 90%;
+  background-color: transparent;
+}
+
+.landing__searchInput::placeholder {
+  color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.landing__searchBar {
   box-sizing: border-box;
-  font-size: medium;
-  max-width: 400px;
-  margin: 100px auto;
+  max-width: 700px;
+  height: 70px;
+  margin: 400px auto;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
-}
-
-.landing__searchInput {
- 
 }
