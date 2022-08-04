@@ -22,7 +22,7 @@
   max-width: 700px;
   height: 70px;
   margin: 400px auto;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(6px);

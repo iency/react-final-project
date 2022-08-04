@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Navbar';
 import Landing from './Landing';
+import Games from './Games';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <Landing />
           <Routes>
             
-            {/* <Route path='/games' element={<Games />}></Route> */}
+            <Route path='/games' element={<Games />}></Route>
           </Routes>
       </div>
     </div>

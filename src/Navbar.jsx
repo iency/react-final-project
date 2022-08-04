@@ -18,7 +18,7 @@ const Navbar = () => {
         <a href="/games">Games</a>
         <a href="/">News</a>
         <a href="/">Reviews</a>
-        <a href="/">Giveaways</a>
+        <a href="/"><span>Giveaways</span></a>
       </div>
       <div className="navbar__rightSection">
         <IconButton>

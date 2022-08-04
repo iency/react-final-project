@@ -31,11 +31,15 @@
 
 .navbar__middleSection > a {
   text-transform: uppercase;
-  margin-right: 40px;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.8);
   font-weight: bold;
   font-size: 35px;
+  margin-right: 40px;
+}
+
+.giveaways {
+  margin-right: 0;
 }
 
 .navbar__rightSection {
