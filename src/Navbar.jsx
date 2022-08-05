@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.css';
-import { IconButton } from '@mui/material';
+import { Button, IconButton } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 
 const Navbar = () => {
