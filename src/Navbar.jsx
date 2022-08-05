@@ -12,7 +12,7 @@ const Navbar = () => {
         src="https://m.media-amazon.com/images/I/31A+ZEFkDGL._AC_.jpg" 
         alt=""
         />
-        <h1><span>Felt</span>MMO</h1>
+        {/* <h1><span>Felt</span>MMO</h1> */}
       </a>
       <div className="navbar__middleSection">
         <a href="/games">Games</a>

@@ -2,3 +2,8 @@
   margin: 0;
   padding: 0;
 }
+
+.app {
+  background-image: url("https://i.imgur.com/RR0J7Z0.jpg");
+  height: 100vh;
+}

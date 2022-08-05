@@ -10,12 +10,13 @@
   display: flex;
   cursor: pointer;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .nav__logo {
   height: 70px;
   margin-top: 10px;
+  filter: invert(1);
 }
 
 .navbar__leftSection > h1 {
@@ -36,10 +37,7 @@
   font-weight: bold;
   font-size: 35px;
   margin-right: 40px;
-}
-
-.giveaways {
-  margin-right: 0;
+  filter: invert(1);
 }
 
 .navbar__rightSection {
@@ -47,7 +45,7 @@
   border-radius: 50px;
   background-color: whitesmoke;
   padding: 5px;
-  flex: 0.4;
+  flex: 0.3;
 }
 
 .navbar__rightSection > .MuiSvgIcon-root {
