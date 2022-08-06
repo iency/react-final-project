@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Navbar';
 import Landing from './Landing';
 import Games from './Games';
-import { Switch } from '@mui/material';
 
 function App() {
   return (
