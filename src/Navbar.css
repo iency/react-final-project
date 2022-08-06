@@ -45,11 +45,9 @@
   border-radius: 50px;
   background-color: whitesmoke;
   padding: 5px;
-  flex: 0.3;
-}
-
-.navbar__rightSection > .MuiSvgIcon-root {
-  color: gray;
+  width: 150px;
+  display: flex;
+  align-items: center;
 }
 
 .navbar__rightSection > input {
@@ -57,4 +55,5 @@
   outline: none;
   background-color: transparent;
   font-size: medium;
+  flex: 1;
 }
