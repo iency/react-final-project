@@ -1,0 +1,8 @@
+.games__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.game__cardContainer {
+  width: 33%;
+}
