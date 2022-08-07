@@ -1,8 +1,14 @@
 .games__list {
   display: flex;
-  flex-wrap: wrap;
 }
 
-.game__cardContainer {
+.game__card {
   width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.game__cardContainer > p {
+  color: white;
 }
