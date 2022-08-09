@@ -32,19 +32,19 @@ const Games = () => {
                   {game.short_description}
                 </p>
                 <p>
-                  {game.genre}
+                  <b>Genre:</b> {game.genre}
                 </p>
                 <p>
-                  {game.platform}
+                <b>Platform:</b> {game.platform}
                 </p>
                 <p>
-                  {game.publisher}
+                <b>Publisher:</b> {game.publisher}
                 </p>
                 <p>
-                  {game.developer}
+                <b>Developer:</b> {game.developer}
                 </p>
                 <p>
-                  {game.release_date}
+                <b>Release date:</b> {game.release_date}
                 </p>
               </div>
             </div>

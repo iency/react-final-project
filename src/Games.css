@@ -1,13 +1,25 @@
 .games__list {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .game__cardContainer > p {
   color: white;
+  inline-size: 380px;
+  overflow-wrap: break-word;
+  padding: 5px 5px 5px 0px;
+}
+
+.game__cardContainer > h3 {
+  color: white;
+  text-transform: uppercase;
 }
 
 .game {
-  display: flex;
-  flex-wrap: wrap;
-  width: calc(100% / 3);
+  width: calc(100% / 4);
+}
+
+.game__cardContainer {
+  padding: 20px;
 }
