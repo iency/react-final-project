@@ -1,15 +1,13 @@
 .games__list {
   display: flex;
-  width: 100vw;
-}
-
-.game__card {
-  width: 33%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .game__cardContainer > p {
   color: white;
+}
+
+.game {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% / 3);
 }

@@ -26,7 +26,7 @@ const Games = () => {
           <div className="game" key={game.id} onClick={() => navigate(`${game.id}`)}>
             <div className="game__card">
               <div className="game__cardContainer">
-                <img src={game.thumbnail} ></img>
+                <img src={game.thumbnail}></img>
                 <h3>{game.title}</h3>
                 <p>
                   {game.short_description}
