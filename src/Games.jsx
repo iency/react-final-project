@@ -25,8 +25,10 @@ const Games = () => {
         {games.map((game) => (
           <div className="game" key={game.id} onClick={() => navigate(`${game.id}`)}>
             <div className="game__card">
-              <div className="game__cardContainer">
+              <div className="game__cardContainer--img">
                 <img src={game.thumbnail}></img>
+              </div>
+              <div className="game__cardContainer--text">
                 <h3>{game.title}</h3>
                 <p>
                   {game.short_description}
@@ -46,7 +48,7 @@ const Games = () => {
                 <p>
                 <b>Release date:</b> {game.release_date}
                 </p>
-              </div>
+              </div>  
             </div>
           </div>
         ))};

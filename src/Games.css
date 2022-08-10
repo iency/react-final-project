@@ -1,25 +1,36 @@
+.games {
+  background-color: black;
+}
+
 .games__list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.game__cardContainer > p {
+.game__cardContainer--text > p {
   color: white;
-  inline-size: 380px;
+  inline-size: 90%;
   overflow-wrap: break-word;
-  padding: 5px 5px 5px 0px;
+  padding: 4px 4px 4px 0px;
 }
 
-.game__cardContainer > h3 {
+.game__cardContainer--text > h3 {
   color: white;
   text-transform: uppercase;
 }
 
 .game {
-  width: calc(100% / 4);
+  width: calc(100% / 2);
 }
 
-.game__cardContainer {
-  padding: 20px;
+.game__cardContainer--img {
+  margin-right: 24px;
+  border: 10px solid lightgray;
+}
+
+.game__card {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
 }
