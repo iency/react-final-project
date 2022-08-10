@@ -18,6 +18,18 @@ const Games = () => {
 
   return (
     <div className='games'>
+      <select
+        id="filter"
+        
+        defaultValue={"DEFAULT"}
+      >
+        <option value="DEFAULT" disabled>
+          Sort
+        </option>
+        <option value="RELEASE_DATE_HIGH_TO_LOW">Price, Low to High</option>
+        <option value="RELEASE_DATE_LOW_TO_HIGH">Price, High to Low</option>
+        <option value="RATING">Rating</option>
+      </select>
       <div className="games__searchBar">
 
       </div>
@@ -26,7 +38,7 @@ const Games = () => {
           <div className="game" key={game.id} onClick={() => navigate(`${game.id}`)}>
             <div className="game__card">
               <div className="game__cardContainer--img">
-                <img src={game.thumbnail}></img>
+                <img src={game.thumbnail} className="game__img"></img>
               </div>
               <div className="game__cardContainer--text">
                 <h3>{game.title}</h3>
@@ -37,18 +49,15 @@ const Games = () => {
                   <b>Genre:</b> {game.genre}
                 </p>
                 <p>
-                <b>Platform:</b> {game.platform}
+                  <b>Platform:</b> {game.platform}
                 </p>
                 <p>
-                <b>Publisher:</b> {game.publisher}
+                  <b>Developer:</b> {game.developer}
                 </p>
                 <p>
-                <b>Developer:</b> {game.developer}
+                  <b>Release date:</b> {game.release_date}
                 </p>
-                <p>
-                <b>Release date:</b> {game.release_date}
-                </p>
-              </div>  
+              </div>
             </div>
           </div>
         ))};
