@@ -26,8 +26,8 @@ const Games = () => {
         <option value="DEFAULT" disabled>
           Sort
         </option>
-        <option value="RELEASE_DATE_HIGH_TO_LOW">Price, Low to High</option>
-        <option value="RELEASE_DATE_LOW_TO_HIGH">Price, High to Low</option>
+        <option value="RELEASE_DATE_HIGH_TO_LOW">Release date, Low to High</option>
+        <option value="RELEASE_DATE_LOW_TO_HIGH">Release date, High to Low</option>
         <option value="RATING">Rating</option>
       </select>
       <div className="games__searchBar">
