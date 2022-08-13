@@ -30,11 +30,13 @@
   border: 10px solid lightgray;
   transition: 300ms all ease;
   object-fit: contain;
+  background-color: white;
 }
 
 .game__cardContainer--img:hover {
   transform: scale(1.1);
   transition: 300ms all ease;
+  background-color: greenyellow;
 }
 
 .game__card {
