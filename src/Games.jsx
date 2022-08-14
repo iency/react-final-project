@@ -3,9 +3,8 @@ import './Games.css';
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 
-const Games = (props) => {
+const Games = () => {
   const [games, setGames] = useState([]);
-  const [search, setSearch] = useState("");
 
   let navigate = useNavigate();
 
@@ -18,11 +17,45 @@ const Games = (props) => {
     getGames();
   }, []);
 
+  function filterGames(filter) {
+    switch (filter) {
+      case "RELEASE_DATE_ASCENDING":
+        return setGames(
+          games
+            .slice()
+            .sort(
+              (a,b) => 
+                (a.release_date < b.release_date)
+            )
+        );
+      case "RELEASE_DATE_DESCENDING":
+        return setGames(
+          games
+            .slice()
+            .sort(
+              (a, b) => 
+                (a.release_date > b.release_date)
+            )
+        );
+      case "PLATFORM_PC":
+        return setGames(
+          games
+            .slice()
+            .sort(
+              (a, b) => 
+                (a.platform || b.platform == "PC")
+            )
+        );
+        default:
+        break;
+    }
+  }
+
   return (
     <div className='games'>
       <select
         id="filter"
-        
+        onChange={(event) => filterGames(event.target.value)}
         defaultValue={"DEFAULT"}
       >
         <option value="DEFAULT" disabled>
@@ -31,7 +64,7 @@ const Games = (props) => {
         <option value="RELEASE_DATE_ASCENDING">New to Old</option>
         <option value="RELEASE_DATE_DESCENDING">Old to New</option>
         <option value="PLATFORM_PC">PC (Windows)</option>
-        <option value="PLATFORM_">Web Browser</option>
+        <option value="PLATFORM_WEB">Web Browser</option>
       </select>
       <div className="games__searchBar">
 
