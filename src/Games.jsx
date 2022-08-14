@@ -3,8 +3,10 @@ import './Games.css';
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 
-const Games = () => {
+const Games = (props) => {
   const [games, setGames] = useState([]);
+  const [search, setSearch] = useState("");
+
   let navigate = useNavigate();
 
   async function getGames() {
