@@ -63,8 +63,8 @@ const Games = () => {
         </option>
         <option value="RELEASE_DATE_ASCENDING">New to Old</option>
         <option value="RELEASE_DATE_DESCENDING">Old to New</option>
-        <option value="PLATFORM_PC">PC (Windows)</option>
-        <option value="PLATFORM_WEB">Web Browser</option>
+        <option value="PLATFORM_PC">PC</option>
+        <option value="PLATFORM_WEB">Web</option>
       </select>
       <div className="games__searchBar">
 
